@@ -1,0 +1,76 @@
+{
+ "id": "g08_01_E1_7309e3daca",
+ "gen": 8,
+ "op": "E1",
+ "parents": [],
+ "description": "Two-scale SLIC: the intersection of 4-pixel and 16-pixel superpixel partitions on six PCs; each region described by its PC mean, the PC mean of its 16-pixel parent superpixel and multiscale smoothed-PC context, labelled as a region by an RBF SVM.",
+ "fitness": 99.02311723437336,
+ "per_scene": {
+  "indian_pines": {
+   "scene": "indian_pines",
+   "fitness": 97.4550639095609,
+   "oa_val": 98.38350055741361,
+   "oa_grp": 95.8168456755229,
+   "mf1_val": 0.9816484549574619,
+   "n_regions": 7624,
+   "mean_region_size": 2.7577387198321093,
+   "purity": 0.9998606077502091,
+   "seconds": 10.293445348739624,
+   "trace": [],
+   "error": null
+  },
+  "pavia_university": {
+   "scene": "pavia_university",
+   "fitness": 99.58067382470529,
+   "oa_val": 99.73283462463264,
+   "oa_grp": 99.42727757059137,
+   "mf1_val": 0.9958190927889182,
+   "n_regions": 51924,
+   "mean_region_size": 3.99429936060396,
+   "purity": 1.0,
+   "seconds": 24.78638529777527,
+   "trace": [],
+   "error": null
+  },
+  "salinas": {
+   "scene": "salinas",
+   "fitness": 99.18409283996318,
+   "oa_val": 99.77831732291776,
+   "oa_grp": 97.9124934106484,
+   "mf1_val": 0.998614677863234,
+   "n_regions": 27651,
+   "mean_region_size": 4.018082528660808,
+   "purity": 0.9999472156241752,
+   "seconds": 32.748295307159424,
+   "trace": [],
+   "error": null
+  },
+  "botswana": {
+   "scene": "botswana",
+   "fitness": 99.38638254576357,
+   "oa_val": 99.47275922671353,
+   "oa_grp": 99.14236706689536,
+   "mf1_val": 0.9954402134368179,
+   "n_regions": 94477,
+   "mean_region_size": 3.99944960149031,
+   "purity": 1.0,
+   "seconds": 19.776499271392822,
+   "trace": [],
+   "error": null
+  },
+  "houston": {
+   "scene": "houston",
+   "fitness": 99.50937305187385,
+   "oa_val": 99.77142857142857,
+   "oa_grp": 99.03417533432392,
+   "mf1_val": 0.9972251524986901,
+   "n_regions": 165698,
+   "mean_region_size": 4.012390010742435,
+   "purity": 1.0,
+   "seconds": 17.92357087135315,
+   "trace": [],
+   "error": null
+  }
+ },
+ "eval_seconds": 61.02522039413452
+}

@@ -1,0 +1,31 @@
+{
+ "id": "g10_01_E1_d71313acdd",
+ "gen": 10,
+ "op": "E1",
+ "parents": [],
+ "description": "",
+ "fitness": 0.0,
+ "per_scene": {
+  "indian_pines": {
+   "fitness": 0.0,
+   "error": "SyntaxError: unterminated string literal (detected at line 12) (<design>, line 12)"
+  },
+  "pavia_university": {
+   "fitness": 0.0,
+   "error": "SyntaxError: unterminated string literal (detected at line 12) (<design>, line 12)"
+  },
+  "salinas": {
+   "fitness": 0.0,
+   "error": "SyntaxError: unterminated string literal (detected at line 12) (<design>, line 12)"
+  },
+  "botswana": {
+   "fitness": 0.0,
+   "error": "SyntaxError: unterminated string literal (detected at line 12) (<design>, line 12)"
+  },
+  "houston": {
+   "fitness": 0.0,
+   "error": "SyntaxError: unterminated string literal (detected at line 12) (<design>, line 12)"
+  }
+ },
+ "eval_seconds": 0.00036525726318359375
+}

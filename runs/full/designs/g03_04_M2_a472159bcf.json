@@ -1,0 +1,78 @@
+{
+ "id": "g03_04_M2_a472159bcf",
+ "gen": 3,
+ "op": "M2",
+ "parents": [
+  "g02_02_E2_e1f21a3ebe"
+ ],
+ "description": "Compact watershed on the PC gradient with a 3-pixel marker lattice, labelled by pixel vote of an RBF SVM on PCs and smoothed PCs.",
+ "fitness": 96.6163613345868,
+ "per_scene": {
+  "indian_pines": {
+   "scene": "indian_pines",
+   "fitness": 90.85358408574022,
+   "oa_val": 95.31772575250837,
+   "oa_grp": 90.55390702274975,
+   "mf1_val": 0.8668911948196256,
+   "n_regions": 1296,
+   "mean_region_size": 16.222993827160494,
+   "purity": 0.9775578477836633,
+   "seconds": 8.16390609741211,
+   "trace": [],
+   "error": null
+  },
+  "pavia_university": {
+   "scene": "pavia_university",
+   "fitness": 98.40133596423529,
+   "oa_val": 98.83783061715201,
+   "oa_grp": 97.8747048201139,
+   "mf1_val": 0.9849147245543995,
+   "n_regions": 12920,
+   "mean_region_size": 16.05263157894737,
+   "purity": 0.9987643188725245,
+   "seconds": 34.724271297454834,
+   "trace": [],
+   "error": null
+  },
+  "salinas": {
+   "scene": "salinas",
+   "fitness": 98.39485017170368,
+   "oa_val": 98.78602343502585,
+   "oa_grp": 97.08590508954771,
+   "mf1_val": 0.993126219905375,
+   "n_regions": 6912,
+   "mean_region_size": 16.074074074074073,
+   "purity": 0.9996041171813144,
+   "seconds": 61.65636849403381,
+   "trace": [],
+   "error": null
+  },
+  "botswana": {
+   "scene": "botswana",
+   "fitness": 97.24012109735354,
+   "oa_val": 97.53954305799648,
+   "oa_grp": 96.46840148698885,
+   "mf1_val": 0.9771241874707525,
+   "n_regions": 23616,
+   "mean_region_size": 16.0,
+   "purity": 1.0,
+   "seconds": 7.1033220291137695,
+   "trace": [],
+   "error": null
+  },
+  "houston": {
+   "scene": "houston",
+   "fitness": 98.19191535390122,
+   "oa_val": 98.47619047619047,
+   "oa_grp": 98.01787796346677,
+   "mf1_val": 0.9808167762204643,
+   "n_regions": 41412,
+   "mean_region_size": 16.05440452042886,
+   "purity": 0.999047528336032,
+   "seconds": 18.902796983718872,
+   "trace": [],
+   "error": null
+  }
+ },
+ "eval_seconds": 69.83012008666992
+}

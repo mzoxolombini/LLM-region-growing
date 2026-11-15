@@ -1,0 +1,36 @@
+"""M1 on g03_03. Weakest point: Indian Pines mF1 0.903 with 9-pixel regions; rare classes sit in small
+fields and get absorbed by neighbouring regions. Markers every 2 pixels give 4-pixel regions;
+the pixel description is unchanged."""
+import numpy as np
+from scipy import ndimage
+from skimage.segmentation import watershed
+from llm_mrg import blocks as B
+
+DESCRIPTION = ("Compact watershed on a 2-pixel lattice of the PC gradient; pixel vote of an RBF SVM "
+               "on PCs, smoothed PCs at two scales and local PC standard deviation.")
+PARAMS = {"n_pc": 5, "grad_sigma": 1.0, "marker_step": 2, "compactness": 0.01,
+          "ctx_sigma1": 1.0, "ctx_sigma2": 5.0, "std_size": 9}
+CLASSIFIER = {"kernel": "rbf", "C": 1000.0, "gamma": "scale"}
+LABELING = "pixel_vote"
+
+
+def segment(ctx, params):
+    p = np.asarray(ctx.pcs[..., : params["n_pc"]], dtype=np.float64)
+    g = sum(ndimage.gaussian_gradient_magnitude(p[..., i], params["grad_sigma"]) for i in range(p.shape[2]))
+    st = params["marker_step"]
+    m = np.zeros(g.shape, np.int32)
+    yy, xx = np.mgrid[st // 2: g.shape[0]: st, st // 2: g.shape[1]: st]
+    m[yy, xx] = np.arange(1, yy.size + 1).reshape(yy.shape)
+    return B.relabel(watershed(g, m, compactness=params["compactness"]) - 1)
+
+
+def pixel_features(ctx, params):
+    p = np.asarray(ctx.pcs, dtype=np.float32)
+    k = p.shape[2]
+    s1 = np.stack([ndimage.gaussian_filter(p[..., i], params["ctx_sigma1"]) for i in range(k)], -1)
+    s2 = np.stack([ndimage.gaussian_filter(p[..., i], params["ctx_sigma2"]) for i in range(k)], -1)
+    sz = params["std_size"]
+    mu = np.stack([ndimage.uniform_filter(p[..., i], sz) for i in range(k)], -1)
+    sq = np.stack([ndimage.uniform_filter(p[..., i] ** 2, sz) for i in range(k)], -1)
+    sd = np.sqrt(np.maximum(sq - mu ** 2, 0))
+    return np.concatenate([p, s1, s2, sd], -1)

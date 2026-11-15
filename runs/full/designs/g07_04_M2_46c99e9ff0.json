@@ -1,0 +1,78 @@
+{
+ "id": "g07_04_M2_46c99e9ff0",
+ "gen": 7,
+ "op": "M2",
+ "parents": [
+  "g05_04_M2_06f0cbf08f"
+ ],
+ "description": "Compact watershed on a 2-pixel lattice of the PC gradient; pixel vote of an RBF SVM on PCs, smoothed PCs at two scales and local PC standard deviation.",
+ "fitness": 99.67655893131317,
+ "per_scene": {
+  "indian_pines": {
+   "scene": "indian_pines",
+   "fitness": 99.08101398404615,
+   "oa_val": 99.10813823857302,
+   "oa_grp": 98.79656160458453,
+   "mf1_val": 0.9933834210898093,
+   "n_regions": 5184,
+   "mean_region_size": 4.055748456790123,
+   "purity": 0.9959576247560635,
+   "seconds": 11.722011089324951,
+   "trace": [],
+   "error": null
+  },
+  "pavia_university": {
+   "scene": "pavia_university",
+   "fitness": 99.75339614367205,
+   "oa_val": 99.75955116216937,
+   "oa_grp": 99.82698961937716,
+   "mf1_val": 0.996736476494696,
+   "n_regions": 51850,
+   "mean_region_size": 4.0,
+   "purity": 1.0,
+   "seconds": 41.611145973205566,
+   "trace": [],
+   "error": null
+  },
+  "salinas": {
+   "scene": "salinas",
+   "fitness": 99.85212863934173,
+   "oa_val": 99.86276786656813,
+   "oa_grp": 99.88250373851741,
+   "mf1_val": 0.9981111431293965,
+   "n_regions": 27648,
+   "mean_region_size": 4.018518518518518,
+   "purity": 0.9999208234362629,
+   "seconds": 65.81071448326111,
+   "trace": [],
+   "error": null
+  },
+  "botswana": {
+   "scene": "botswana",
+   "fitness": 100.0,
+   "oa_val": 100.0,
+   "oa_grp": 100.0,
+   "mf1_val": 1.0,
+   "n_regions": 94464,
+   "mean_region_size": 4.0,
+   "purity": 1.0,
+   "seconds": 14.51085901260376,
+   "trace": [],
+   "error": null
+  },
+  "houston": {
+   "scene": "houston",
+   "fitness": 99.69625588950588,
+   "oa_val": 99.92380952380952,
+   "oa_grp": 99.22570654277972,
+   "mf1_val": 0.999392516019284,
+   "n_regions": 165648,
+   "mean_region_size": 4.013601130107215,
+   "purity": 0.9999047528336032,
+   "seconds": 25.032556772232056,
+   "trace": [],
+   "error": null
+  }
+ },
+ "eval_seconds": 81.18743705749512
+}

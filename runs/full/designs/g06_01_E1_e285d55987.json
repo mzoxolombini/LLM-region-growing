@@ -1,0 +1,86 @@
+{
+ "id": "g06_01_E1_e285d55987",
+ "gen": 6,
+ "op": "E1",
+ "parents": [],
+ "description": "Spectral-angle region growing: all bands normalised to unit length so Euclidean distance tracks spectral angle, grown from seeds in order of local spectral homogeneity under a seed-referenced threshold, within a 3x3 grid; pixel vote of an RBF SVM on PCs, smoothed PCs and local PC std.",
+ "fitness": 89.32949082649426,
+ "per_scene": {
+  "indian_pines": {
+   "scene": "indian_pines",
+   "fitness": 88.92850530531241,
+   "oa_val": 92.53065774804905,
+   "oa_grp": 86.58297371518242,
+   "mf1_val": 0.876718844527058,
+   "n_regions": 2714,
+   "mean_region_size": 7.7468680913780394,
+   "purity": 0.933649289099526,
+   "seconds": 16.103957176208496,
+   "trace": [
+    "grow(criterion=seed,channels=200,cells=9,thr=0.12)"
+   ],
+   "error": null
+  },
+  "pavia_university": {
+   "scene": "pavia_university",
+   "fitness": 97.61009410138087,
+   "oa_val": 98.39700774779588,
+   "oa_grp": 96.07104932908582,
+   "mf1_val": 0.9836222522726091,
+   "n_regions": 38783,
+   "mean_region_size": 5.347703890880025,
+   "purity": 0.9858397622148749,
+   "seconds": 45.38426089286804,
+   "trace": [
+    "grow(criterion=seed,channels=103,cells=9,thr=0.12)"
+   ],
+   "error": null
+  },
+  "salinas": {
+   "scene": "salinas",
+   "fitness": 86.30283801313868,
+   "oa_val": 91.6605088145255,
+   "oa_grp": 85.17265930936276,
+   "mf1_val": 0.8207534591552779,
+   "n_regions": 1989,
+   "mean_region_size": 55.85922574157868,
+   "purity": 0.9186328846661388,
+   "seconds": 82.3016996383667,
+   "trace": [
+    "grow(criterion=seed,channels=204,cells=9,thr=0.12)"
+   ],
+   "error": null
+  },
+  "botswana": {
+   "scene": "botswana",
+   "fitness": 81.08921379270912,
+   "oa_val": 78.9103690685413,
+   "oa_grp": 87.67967145790554,
+   "mf1_val": 0.766776008516805,
+   "n_regions": 23576,
+   "mean_region_size": 16.02714625042416,
+   "purity": 0.8213814342278927,
+   "seconds": 19.07694149017334,
+   "trace": [
+    "grow(criterion=seed,channels=145,cells=9,thr=0.12)"
+   ],
+   "error": null
+  },
+  "houston": {
+   "scene": "houston",
+   "fitness": 92.7168029199302,
+   "oa_val": 92.07619047619048,
+   "oa_grp": 93.30175913396481,
+   "mf1_val": 0.9277245914963529,
+   "n_regions": 66139,
+   "mean_region_size": 10.052238467470024,
+   "purity": 0.9398990380036194,
+   "seconds": 42.06963753700256,
+   "trace": [
+    "grow(criterion=seed,channels=144,cells=9,thr=0.12)"
+   ],
+   "error": null
+  }
+ },
+ "eval_seconds": 106.55011773109436
+}

@@ -1,0 +1,76 @@
+{
+ "id": "g01_01_E1_b22529ae45",
+ "gen": 1,
+ "op": "E1",
+ "parents": [],
+ "description": "SLIC superpixels on the first five standardised PCs replace region growing; each superpixel is described by the mean and standard deviation of the ten PCs and its mean spectrum, and an RBF SVM labels the superpixels.",
+ "fitness": 95.91595775671621,
+ "per_scene": {
+  "indian_pines": {
+   "scene": "indian_pines",
+   "fitness": 90.38334066534917,
+   "oa_val": 98.0490523968785,
+   "oa_grp": 76.92307692307693,
+   "mf1_val": 0.9617789267609202,
+   "n_regions": 797,
+   "mean_region_size": 26.3801756587202,
+   "purity": 0.9860607750209088,
+   "seconds": 1.4965581893920898,
+   "trace": [],
+   "error": null
+  },
+  "pavia_university": {
+   "scene": "pavia_university",
+   "fitness": 97.74163628244924,
+   "oa_val": 98.79775581084691,
+   "oa_grp": 96.80136896143215,
+   "mf1_val": 0.9762578407506862,
+   "n_regions": 8294,
+   "mean_region_size": 25.006028454304317,
+   "purity": 0.9976956216811943,
+   "seconds": 2.8473196029663086,
+   "trace": [],
+   "error": null
+  },
+  "salinas": {
+   "scene": "salinas",
+   "fitness": 96.10188526696656,
+   "oa_val": 96.46363348464055,
+   "oa_grp": 94.03712537592035,
+   "mf1_val": 0.9780489694033878,
+   "n_regions": 4386,
+   "mean_region_size": 25.331509347925216,
+   "purity": 0.9964898390076538,
+   "seconds": 2.45817232131958,
+   "trace": [],
+   "error": null
+  },
+  "botswana": {
+   "scene": "botswana",
+   "fitness": 98.10683122569164,
+   "oa_val": 99.82425307557118,
+   "oa_grp": 94.66666666666667,
+   "mf1_val": 0.9982957393483709,
+   "n_regions": 15043,
+   "mean_region_size": 25.118393937379512,
+   "purity": 1.0,
+   "seconds": 3.0093979835510254,
+   "trace": [],
+   "error": null
+  },
+  "houston": {
+   "scene": "houston",
+   "fitness": 97.24609534312441,
+   "oa_val": 97.94285714285714,
+   "oa_grp": 95.76894775570273,
+   "mf1_val": 0.9802648113081335,
+   "n_regions": 26667,
+   "mean_region_size": 24.93137585780178,
+   "purity": 0.9983807981712544,
+   "seconds": 4.390933275222778,
+   "trace": [],
+   "error": null
+  }
+ },
+ "eval_seconds": 8.39598298072815
+}

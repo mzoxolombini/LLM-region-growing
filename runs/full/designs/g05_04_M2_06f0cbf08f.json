@@ -1,0 +1,78 @@
+{
+ "id": "g05_04_M2_06f0cbf08f",
+ "gen": 5,
+ "op": "M2",
+ "parents": [
+  "g04_03_M1_6800cb1162"
+ ],
+ "description": "Compact watershed on a 2-pixel lattice of the PC gradient; pixel vote of an RBF SVM on PCs, smoothed PCs at two scales and local PC standard deviation.",
+ "fitness": 99.59602768726067,
+ "per_scene": {
+  "indian_pines": {
+   "scene": "indian_pines",
+   "fitness": 99.02919339743255,
+   "oa_val": 99.05239687848383,
+   "oa_grp": 98.73925501432664,
+   "mf1_val": 0.9929592829948719,
+   "n_regions": 5184,
+   "mean_region_size": 4.055748456790123,
+   "purity": 0.9959576247560635,
+   "seconds": 13.351120710372925,
+   "trace": [],
+   "error": null
+  },
+  "pavia_university": {
+   "scene": "pavia_university",
+   "fitness": 99.72070492251619,
+   "oa_val": 99.75955116216937,
+   "oa_grp": 99.74713867447431,
+   "mf1_val": 0.9965542493090493,
+   "n_regions": 51850,
+   "mean_region_size": 4.0,
+   "purity": 1.0,
+   "seconds": 38.792622327804565,
+   "trace": [],
+   "error": null
+  },
+  "salinas": {
+   "scene": "salinas",
+   "fitness": 99.7830424166372,
+   "oa_val": 99.87332418452444,
+   "oa_grp": 99.63682973723563,
+   "mf1_val": 0.9983897332815155,
+   "n_regions": 27648,
+   "mean_region_size": 4.018518518518518,
+   "purity": 0.9999208234362629,
+   "seconds": 69.3895833492279,
+   "trace": [],
+   "error": null
+  },
+  "botswana": {
+   "scene": "botswana",
+   "fitness": 99.65064289836978,
+   "oa_val": 99.82425307557118,
+   "oa_grp": 99.45750452079565,
+   "mf1_val": 0.9967017109874252,
+   "n_regions": 94464,
+   "mean_region_size": 4.0,
+   "purity": 1.0,
+   "seconds": 10.569908380508423,
+   "trace": [],
+   "error": null
+  },
+  "houston": {
+   "scene": "houston",
+   "fitness": 99.79655480134767,
+   "oa_val": 99.96190476190476,
+   "oa_grp": 99.45799457994579,
+   "mf1_val": 0.9996976506219244,
+   "n_regions": 165648,
+   "mean_region_size": 4.013601130107215,
+   "purity": 0.9999047528336032,
+   "seconds": 25.117180109024048,
+   "trace": [],
+   "error": null
+  }
+ },
+ "eval_seconds": 82.74750709533691
+}

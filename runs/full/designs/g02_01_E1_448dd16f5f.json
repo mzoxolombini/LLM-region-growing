@@ -1,0 +1,91 @@
+{
+ "id": "g02_01_E1_448dd16f5f",
+ "gen": 2,
+ "op": "E1",
+ "parents": [],
+ "description": "Partitional clustering: mini-batch k-means on the ten PCs, then 8-connected components of the cluster map with tiny components merged into their closest neighbour; pixels labelled by an RBF SVM on PCs and smoothed PCs with a majority vote per region.",
+ "fitness": 95.01674472320153,
+ "per_scene": {
+  "indian_pines": {
+   "scene": "indian_pines",
+   "fitness": 94.02284252094398,
+   "oa_val": 96.87848383500557,
+   "oa_grp": 89.31343283582089,
+   "mf1_val": 0.9587661089200552,
+   "n_regions": 1105,
+   "mean_region_size": 19.02714932126697,
+   "purity": 0.9789517702815723,
+   "seconds": 11.872628688812256,
+   "trace": [
+    "connected_components",
+    "merge_small(min_size=6)"
+   ],
+   "error": null
+  },
+  "pavia_university": {
+   "scene": "pavia_university",
+   "fitness": 98.73173725079805,
+   "oa_val": 99.1717873363612,
+   "oa_grp": 98.0564024390244,
+   "mf1_val": 0.9896702197700855,
+   "n_regions": 11307,
+   "mean_region_size": 18.342619616166978,
+   "purity": 0.9992986674681895,
+   "seconds": 35.25146794319153,
+   "trace": [
+    "connected_components",
+    "merge_small(min_size=6)"
+   ],
+   "error": null
+  },
+  "salinas": {
+   "scene": "salinas",
+   "fitness": 96.87866630297702,
+   "oa_val": 97.32925155705689,
+   "oa_grp": 97.333204034135,
+   "mf1_val": 0.9597354331773919,
+   "n_regions": 4996,
+   "mean_region_size": 22.238590872698158,
+   "purity": 0.9844550013196094,
+   "seconds": 56.41634011268616,
+   "trace": [
+    "connected_components",
+    "merge_small(min_size=6)"
+   ],
+   "error": null
+  },
+  "botswana": {
+   "scene": "botswana",
+   "fitness": 98.28825350391652,
+   "oa_val": 98.06678383128296,
+   "oa_grp": 98.79227053140096,
+   "mf1_val": 0.9800570614906564,
+   "n_regions": 18946,
+   "mean_region_size": 19.943840388472502,
+   "purity": 1.0,
+   "seconds": 10.562796115875244,
+   "trace": [
+    "connected_components",
+    "merge_small(min_size=6)"
+   ],
+   "error": null
+  },
+  "houston": {
+   "scene": "houston",
+   "fitness": 87.16222403737207,
+   "oa_val": 93.18095238095238,
+   "oa_grp": 74.0564163686929,
+   "mf1_val": 0.9424930336247094,
+   "n_regions": 20544,
+   "mean_region_size": 32.3620035046729,
+   "purity": 0.9428517001619202,
+   "seconds": 24.024229764938354,
+   "trace": [
+    "connected_components",
+    "merge_small(min_size=6)"
+   ],
+   "error": null
+  }
+ },
+ "eval_seconds": 70.02536749839783
+}

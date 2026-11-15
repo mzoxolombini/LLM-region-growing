@@ -1,0 +1,78 @@
+{
+ "id": "g08_04_M2_c3151e6a8d",
+ "gen": 8,
+ "op": "M2",
+ "parents": [
+  "g07_02_E2_19443ba381"
+ ],
+ "description": "Felzenszwalb x 2-pixel-lattice watershed intersection; pixel vote of an RBF SVM on PCs, two smoothing scales, local PC std and an extended morphological profile.",
+ "fitness": 99.69065253985244,
+ "per_scene": {
+  "indian_pines": {
+   "scene": "indian_pines",
+   "fitness": 99.46460687608358,
+   "oa_val": 99.72129319955407,
+   "oa_grp": 99.05133928571429,
+   "mf1_val": 0.9962118814298238,
+   "n_regions": 9078,
+   "mean_region_size": 2.316038775060586,
+   "purity": 0.9994424310008364,
+   "seconds": 12.503839254379272,
+   "trace": [],
+   "error": null
+  },
+  "pavia_university": {
+   "scene": "pavia_university",
+   "fitness": 99.67021343872102,
+   "oa_val": 99.7061180870959,
+   "oa_grp": 99.67961553864637,
+   "mf1_val": 0.9962490669042082,
+   "n_regions": 91889,
+   "mean_region_size": 2.2570710313530453,
+   "purity": 1.0,
+   "seconds": 35.854936599731445,
+   "trace": [],
+   "error": null
+  },
+  "salinas": {
+   "scene": "salinas",
+   "fitness": 99.78623775140092,
+   "oa_val": 99.80998627678666,
+   "oa_grp": 99.69655749712253,
+   "mf1_val": 0.9985216948029357,
+   "n_regions": 49718,
+   "mean_region_size": 2.2346836155919387,
+   "purity": 0.9999208234362629,
+   "seconds": 68.39358258247375,
+   "trace": [],
+   "error": null
+  },
+  "botswana": {
+   "scene": "botswana",
+   "fitness": 99.83147472477123,
+   "oa_val": 99.82425307557118,
+   "oa_grp": 100.0,
+   "mf1_val": 0.9967017109874252,
+   "n_regions": 164670,
+   "mean_region_size": 2.2946256148660957,
+   "purity": 1.0,
+   "seconds": 14.464432954788208,
+   "trace": [],
+   "error": null
+  },
+  "houston": {
+   "scene": "houston",
+   "fitness": 99.70072990828544,
+   "oa_val": 99.92380952380952,
+   "oa_grp": 99.23954372623575,
+   "mf1_val": 0.9993883647481103,
+   "n_regions": 281131,
+   "mean_region_size": 2.364893946238586,
+   "purity": 1.0,
+   "seconds": 26.83362102508545,
+   "trace": [],
+   "error": null
+  }
+ },
+ "eval_seconds": 80.91808819770813
+}

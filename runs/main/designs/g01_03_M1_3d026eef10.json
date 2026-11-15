@@ -1,0 +1,88 @@
+{
+ "id": "g01_03_M1_3d026eef10",
+ "gen": 1,
+ "op": "M1",
+ "parents": [
+  "g00_00_D0_5aff8873f1"
+ ],
+ "description": "Baseline MRG with a noise-adaptive intensity threshold and an orientation constraint applied only where the smoothed gradient is strong, so homogeneous areas grow into larger regions; GLCM, PC means and mean spectrum describe regions.",
+ "fitness": 68.72304739337385,
+ "per_scene": {
+  "indian_pines": {
+   "scene": "indian_pines",
+   "fitness": 67.27623247968087,
+   "oa_val": 84.94983277591973,
+   "oa_grp": 34.323922734026745,
+   "mf1_val": 0.8255494192909613,
+   "n_regions": 2051,
+   "mean_region_size": 10.251097025841053,
+   "purity": 0.8759408976860886,
+   "seconds": 2.1388468742370605,
+   "trace": [
+    "mrg(seed_order=histogram,criterion=seed,orientation=on,grid=3,t_int=0.0644,t_ori=0.7854,bins=256)"
+   ],
+   "error": null
+  },
+  "pavia_university": {
+   "scene": "pavia_university",
+   "fitness": 55.16917295364025,
+   "oa_val": 67.60619823670852,
+   "oa_grp": 40.63615709185329,
+   "mf1_val": 0.5726516353235893,
+   "n_regions": 15487,
+   "mean_region_size": 13.391877058177826,
+   "purity": 0.7671242026517049,
+   "seconds": 2.6663296222686768,
+   "trace": [
+    "mrg(seed_order=histogram,criterion=seed,orientation=on,grid=3,t_int=0.02448,t_ori=0.7854,bins=256)"
+   ],
+   "error": null
+  },
+  "salinas": {
+   "scene": "salinas",
+   "fitness": 86.27595879361833,
+   "oa_val": 90.80544706006545,
+   "oa_grp": 84.14580588493632,
+   "mf1_val": 0.838766234358532,
+   "n_regions": 8087,
+   "mean_region_size": 13.738592803264499,
+   "purity": 0.9265769332277646,
+   "seconds": 3.519906997680664,
+   "trace": [
+    "mrg(seed_order=histogram,criterion=seed,orientation=on,grid=3,t_int=0.006868,t_ori=0.7854,bins=256)"
+   ],
+   "error": null
+  },
+  "botswana": {
+   "scene": "botswana",
+   "fitness": 72.59469652351054,
+   "oa_val": 86.11599297012302,
+   "oa_grp": 46.9187675070028,
+   "mf1_val": 0.8474932909340577,
+   "n_regions": 27326,
+   "mean_region_size": 13.827709873380662,
+   "purity": 0.9168499780026397,
+   "seconds": 2.680954694747925,
+   "trace": [
+    "mrg(seed_order=histogram,criterion=seed,orientation=on,grid=3,t_int=0.01608,t_ori=0.7854,bins=256)"
+   ],
+   "error": null
+  },
+  "houston": {
+   "scene": "houston",
+   "fitness": 62.299176216419255,
+   "oa_val": 71.58095238095238,
+   "oa_grp": 44.381648936170215,
+   "mf1_val": 0.7093492733213517,
+   "n_regions": 83552,
+   "mean_region_size": 7.957260149368058,
+   "purity": 0.8469378036003429,
+   "seconds": 3.7528932094573975,
+   "trace": [
+    "mrg(seed_order=histogram,criterion=seed,orientation=on,grid=3,t_int=0.02469,t_ori=0.7854,bins=256)"
+   ],
+   "error": null
+  }
+ },
+ "eval_seconds": 9.1050283908844
+}

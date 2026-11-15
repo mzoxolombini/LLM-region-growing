@@ -1,0 +1,78 @@
+{
+ "id": "g02_03_M1_ddf6442dca",
+ "gen": 2,
+ "op": "M1",
+ "parents": [
+  "g01_01_E1_a5ca8fa579"
+ ],
+ "description": "Watershed from h-minima markers of the PC gradient so region borders follow spectral edges; regions described by PC mean/std, mean spectrum and smoothed-PC context, RBF SVM.",
+ "fitness": 37.468854914959266,
+ "per_scene": {
+  "indian_pines": {
+   "scene": "indian_pines",
+   "fitness": 87.37507089400107,
+   "oa_val": 97.15719063545151,
+   "oa_grp": 75.02732240437159,
+   "mf1_val": 0.899406996421801,
+   "n_regions": 570,
+   "mean_region_size": 36.8859649122807,
+   "purity": 0.9758851407861723,
+   "seconds": 3.310718536376953,
+   "trace": [],
+   "error": null
+  },
+  "pavia_university": {
+   "scene": "pavia_university",
+   "fitness": 59.15288994396877,
+   "oa_val": 50.881645738712265,
+   "oa_grp": 93.19213313161876,
+   "mf1_val": 0.33384890961575314,
+   "n_regions": 60,
+   "mean_region_size": 3456.6666666666665,
+   "purity": 0.5084660855625689,
+   "seconds": 5.052550315856934,
+   "trace": [],
+   "error": null
+  },
+  "salinas": {
+   "scene": "salinas",
+   "fitness": 10.88887367086412,
+   "oa_val": 24.173968119919774,
+   "oa_grp": 0.0,
+   "mf1_val": 0.08492652892672584,
+   "n_regions": 5,
+   "mean_region_size": 22220.8,
+   "purity": 0.24167326471364475,
+   "seconds": 4.498659372329712,
+   "trace": [],
+   "error": null
+  },
+  "botswana": {
+   "scene": "botswana",
+   "fitness": 3.641746117580915,
+   "oa_val": 9.666080843585236,
+   "oa_grp": 0.0,
+   "mf1_val": 0.012591575091575092,
+   "n_regions": 2,
+   "mean_region_size": 188928.0,
+   "purity": 0.09678838539375274,
+   "seconds": 7.239465713500977,
+   "trace": [],
+   "error": null
+  },
+  "houston": {
+   "scene": "houston",
+   "fitness": 26.285693948381468,
+   "oa_val": 9.485714285714286,
+   "oa_grp": 66.66666666666666,
+   "mf1_val": 0.027047008927634692,
+   "n_regions": 58,
+   "mean_region_size": 11462.844827586207,
+   "purity": 0.0952471663967997,
+   "seconds": 7.028805255889893,
+   "trace": [],
+   "error": null
+  }
+ },
+ "eval_seconds": 14.846205472946167
+}

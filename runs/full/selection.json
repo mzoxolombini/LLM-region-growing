@@ -1,0 +1,22 @@
+{
+ "LLM-RB": {
+  "id": "g10_04_M2_0eeda392ee",
+  "fitness": 99.8022617284773,
+  "path": "runs/full/designs/g10_04_M2_0eeda392ee.py",
+  "description": "Wide-context intersection of Felzenszwalb segments on three PCs and a 2-pixel-lattice PC-gradient watershed; pixel vote of an RBF SVM on PCs, two smoothing scales and local PC std."
+ },
+ "LLM-MRG": {
+  "id": "g01_03_M1_5153c05f50",
+  "fitness": 96.83699430559875,
+  "path": "runs/full/designs/g01_03_M1_5153c05f50.py",
+  "description": "Baseline MRG regions with pixel-vote labelling: an RBF SVM classifies pixels from PCs and 2-pixel smoothed PCs, each MRG region takes the majority vote."
+ },
+ "Baseline MRG": {
+  "id": "g00_00_D0_5aff8873f1",
+  "fitness": 90.14917157307372,
+  "path": "runs/full/designs/g00_00_D0_5aff8873f1.py",
+  "description": "Modified region growing on the PCA V channel with histogram-frequency seeds, intensity and orientation constraints to the seed inside a 3x3 grid; regions described by 88 GLCM features and their mean spectrum."
+ },
+ "n_designs": 41,
+ "n_mrg_family": 5
+}

@@ -1,0 +1,301 @@
+{
+ "rows": [
+  {
+   "i": 0,
+   "values": {
+    "PARAMS.t_intensity": 0.05616036050208221,
+    "PARAMS.t_orientation": 2.206635010249207,
+    "PARAMS.n_bins": 31,
+    "PARAMS.glcm_levels": 32,
+    "CLASSIFIER.C": 0.017116391087681895
+   },
+   "fitness": 46.70463810758692,
+   "per_scene": {
+    "indian_pines": {
+     "scene": "indian_pines",
+     "fitness": 55.73550038403567,
+     "oa_val": 62.095875139353396,
+     "oa_grp": 54.90196078431373,
+     "mf1_val": 0.5020866522843987,
+     "n_regions": 3064,
+     "mean_region_size": 6.861945169712794,
+     "purity": 0.9032617786451074,
+     "seconds": 3.9699132442474365,
+     "error": null
+    },
+    "pavia_university": {
+     "scene": "pavia_university",
+     "fitness": 41.003349119848856,
+     "oa_val": 47.63558642799893,
+     "oa_grp": 38.50293542074364,
+     "mf1_val": 0.36871525510804015,
+     "n_regions": 9622,
+     "mean_region_size": 21.554770318021202,
+     "purity": 0.7840897705640717,
+     "seconds": 5.619138717651367,
+     "error": null
+    },
+    "salinas": {
+     "scene": "salinas",
+     "fitness": 51.220269522847104,
+     "oa_val": 57.76417185685633,
+     "oa_grp": 44.173354735152486,
+     "mf1_val": 0.5172328197653249,
+     "n_regions": 3694,
+     "mean_region_size": 30.076881429344883,
+     "purity": 0.6498812351543943,
+     "seconds": 5.084393739700317,
+     "error": null
+    },
+    "botswana": {
+     "scene": "botswana",
+     "fitness": 40.76196529241057,
+     "oa_val": 46.397188049209134,
+     "oa_grp": 30.519480519480517,
+     "mf1_val": 0.45369227308542065,
+     "n_regions": 10894,
+     "mean_region_size": 34.684780613181566,
+     "purity": 0.6260448746150462,
+     "seconds": 2.7794220447540283,
+     "error": null
+    },
+    "houston": {
+     "scene": "houston",
+     "fitness": 44.80210621879243,
+     "oa_val": 39.885714285714286,
+     "oa_grp": 58.45272206303726,
+     "mf1_val": 0.3606788230762575,
+     "n_regions": 41041,
+     "mean_region_size": 16.199532175141933,
+     "purity": 0.7349271359177064,
+     "seconds": 4.688052415847778,
+     "error": null
+    }
+   }
+  },
+  {
+   "i": 1,
+   "values": {
+    "PARAMS.t_intensity": 0.11786012217729872,
+    "PARAMS.t_orientation": 1.2222986370895188,
+    "PARAMS.n_bins": 39,
+    "PARAMS.glcm_levels": 19,
+    "CLASSIFIER.C": 67.78903790978343
+   },
+   "fitness": 88.89778032506031,
+   "per_scene": {
+    "indian_pines": {
+     "scene": "indian_pines",
+     "fitness": 83.20632183566227,
+     "oa_val": 90.52396878483835,
+     "oa_grp": 73.01136363636364,
+     "mf1_val": 0.8608363308578479,
+     "n_regions": 2876,
+     "mean_region_size": 7.310500695410292,
+     "purity": 0.9454976303317536,
+     "seconds": 2.5067806243896484,
+     "error": null
+    },
+    "pavia_university": {
+     "scene": "pavia_university",
+     "fitness": 91.7025036291421,
+     "oa_val": 94.57654288004275,
+     "oa_grp": 88.23122984799632,
+     "mf1_val": 0.9229973815938721,
+     "n_regions": 17357,
+     "mean_region_size": 11.949069539666993,
+     "purity": 0.978559262598938,
+     "seconds": 17.441799640655518,
+     "error": null
+    },
+    "salinas": {
+     "scene": "salinas",
+     "fitness": 91.82623466304254,
+     "oa_val": 93.91956085717302,
+     "oa_grp": 88.16330728095434,
+     "mf1_val": 0.9339583585100024,
+     "n_regions": 10134,
+     "mean_region_size": 10.963489244128676,
+     "purity": 0.9690155713908684,
+     "seconds": 24.286006212234497,
+     "error": null
+    },
+    "botswana": {
+     "scene": "botswana",
+     "fitness": 92.81272884624444,
+     "oa_val": 96.66080843585237,
+     "oa_grp": 84.91228070175438,
+     "mf1_val": 0.9686509740112655,
+     "n_regions": 30736,
+     "mean_region_size": 12.29359708485164,
+     "purity": 0.9868015838099428,
+     "seconds": 2.719928503036499,
+     "error": null
+    },
+    "houston": {
+     "scene": "houston",
+     "fitness": 84.94111265121019,
+     "oa_val": 91.12380952380953,
+     "oa_grp": 72.99836601307189,
+     "mf1_val": 0.907011624167492,
+     "n_regions": 56769,
+     "mean_region_size": 11.711409395973154,
+     "purity": 0.9473283169825698,
+     "seconds": 9.355453252792358,
+     "error": null
+    }
+   }
+  },
+  {
+   "i": 2,
+   "values": {
+    "PARAMS.t_intensity": 0.016802266748665425,
+    "PARAMS.t_orientation": 3.1395762663984517,
+    "PARAMS.n_bins": 71,
+    "PARAMS.glcm_levels": 16,
+    "CLASSIFIER.C": 0.38719584831376275
+   },
+   "fitness": 64.82235629984118,
+   "per_scene": {
+    "indian_pines": {
+     "scene": "indian_pines",
+     "fitness": 80.49396366303118,
+     "oa_val": 86.90078037904125,
+     "oa_grp": 71.95734002509411,
+     "mf1_val": 0.8262377058495818,
+     "n_regions": 6376,
+     "mean_region_size": 3.297521957340025,
+     "purity": 0.9789517702815723,
+     "seconds": 2.782543897628784,
+     "error": null
+    },
+    "pavia_university": {
+     "scene": "pavia_university",
+     "fitness": 62.45168215853082,
+     "oa_val": 76.22228159230563,
+     "oa_grp": 35.62734785875282,
+     "mf1_val": 0.7550541702453399,
+     "n_regions": 18420,
+     "mean_region_size": 11.259500542888166,
+     "purity": 0.9115987042046555,
+     "seconds": 2.9141361713409424,
+     "error": null
+    },
+    "salinas": {
+     "scene": "salinas",
+     "fitness": 61.249863656540604,
+     "oa_val": 70.10450754776734,
+     "oa_grp": 55.39499870208532,
+     "mf1_val": 0.5825008471976914,
+     "n_regions": 1250,
+     "mean_region_size": 88.8832,
+     "purity": 0.7606228556347321,
+     "seconds": 2.011610984802246,
+     "error": null
+    },
+    "botswana": {
+     "scene": "botswana",
+     "fitness": 61.08822772560333,
+     "oa_val": 74.34094903339191,
+     "oa_grp": 35.10971786833856,
+     "mf1_val": 0.7381401627507953,
+     "n_regions": 14411,
+     "mean_region_size": 26.21997085559642,
+     "purity": 0.893532776066872,
+     "seconds": 2.5893471240997314,
+     "error": null
+    },
+    "houston": {
+     "scene": "houston",
+     "fitness": 58.8280442954999,
+     "oa_val": 60.11428571428571,
+     "oa_grp": 60.55323986358469,
+     "mf1_val": 0.5581660730862931,
+     "n_regions": 102007,
+     "mean_region_size": 6.517640946209574,
+     "purity": 0.9309458043623202,
+     "seconds": 3.33547043800354,
+     "error": null
+    }
+   }
+  },
+  {
+   "i": 3,
+   "values": {
+    "PARAMS.t_intensity": 0.01162578404848608,
+    "PARAMS.t_orientation": 0.29709237500604213,
+    "PARAMS.n_bins": 176,
+    "PARAMS.glcm_levels": 10,
+    "CLASSIFIER.C": 16.658694870736348
+   },
+   "fitness": 92.17090302326659,
+   "per_scene": {
+    "indian_pines": {
+     "scene": "indian_pines",
+     "fitness": 85.30356044947693,
+     "oa_val": 86.12040133779264,
+     "oa_grp": 82.94617563739376,
+     "mf1_val": 0.8684410437324439,
+     "n_regions": 17304,
+     "mean_region_size": 1.2150369856680536,
+     "purity": 0.9998606077502091,
+     "seconds": 22.932363271713257,
+     "error": null
+    },
+    "pavia_university": {
+     "scene": "pavia_university",
+     "fitness": 93.1616174260713,
+     "oa_val": 94.24258616083355,
+     "oa_grp": 92.6173599037047,
+     "mf1_val": 0.9262490621367567,
+     "n_regions": 127753,
+     "mean_region_size": 1.6234452419904033,
+     "purity": 1.0,
+     "seconds": 94.50238370895386,
+     "error": null
+    },
+    "salinas": {
+     "scene": "salinas",
+     "fitness": 95.14606257687429,
+     "oa_val": 94.13068721629895,
+     "oa_grp": 93.89587073608617,
+     "mf1_val": 0.9741162977823773,
+     "n_regions": 54147,
+     "mean_region_size": 2.0518957652316843,
+     "purity": 0.9999472156241752,
+     "seconds": 44.357436418533325,
+     "error": null
+    },
+    "botswana": {
+     "scene": "botswana",
+     "fitness": 94.96364843157765,
+     "oa_val": 95.60632688927943,
+     "oa_grp": 93.3913043478261,
+     "mf1_val": 0.9589331405762743,
+     "n_regions": 215632,
+     "mean_region_size": 1.752318765303851,
+     "purity": 1.0,
+     "seconds": 3.3325045108795166,
+     "error": null
+    },
+    "houston": {
+     "scene": "houston",
+     "fitness": 92.27962623233276,
+     "oa_val": 92.68571428571428,
+     "oa_grp": 91.4018691588785,
+     "mf1_val": 0.9275129525240552,
+     "n_regions": 408056,
+     "mean_region_size": 1.629298429627306,
+     "purity": 0.9999047528336032,
+     "seconds": 16.779402017593384,
+     "error": null
+    }
+   }
+  }
+ ],
+ "best": {
+  "i": 3,
+  "fitness": 92.17090302326659,
+  "path": "runs/main/doe/doe_003.py"
+ }
+}

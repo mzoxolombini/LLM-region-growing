@@ -1,0 +1,91 @@
+{
+ "id": "g09_01_E1_5f1932e3e5",
+ "gen": 9,
+ "op": "E1",
+ "parents": [],
+ "description": "Spectral-angle clustering: k-means on unit-normalised spectra (cosine geometry), connected components of the cluster map with singletons merged into their closest neighbour; pixel vote of an RBF SVM on PCs, two smoothing scales and local PC std.",
+ "fitness": 98.12702410203654,
+ "per_scene": {
+  "indian_pines": {
+   "scene": "indian_pines",
+   "fitness": 98.47857436723052,
+   "oa_val": 98.94091415830546,
+   "oa_grp": 97.40420271940667,
+   "mf1_val": 0.9909060622397945,
+   "n_regions": 3311,
+   "mean_region_size": 6.350045303533675,
+   "purity": 0.9933091720100362,
+   "seconds": 23.92697834968567,
+   "trace": [
+    "connected_components",
+    "merge_small(min_size=2)"
+   ],
+   "error": null
+  },
+  "pavia_university": {
+   "scene": "pavia_university",
+   "fitness": 99.76343808607044,
+   "oa_val": 99.75955116216937,
+   "oa_grp": 99.83148434208678,
+   "mf1_val": 0.9969927875395513,
+   "n_regions": 32548,
+   "mean_region_size": 6.372127319650977,
+   "purity": 0.9988311124469826,
+   "seconds": 57.0785071849823,
+   "trace": [
+    "connected_components",
+    "merge_small(min_size=2)"
+   ],
+   "error": null
+  },
+  "salinas": {
+   "scene": "salinas",
+   "fitness": 99.6817823577291,
+   "oa_val": 99.78887364087406,
+   "oa_grp": 99.58285385500575,
+   "mf1_val": 0.9967361957730749,
+   "n_regions": 9843,
+   "mean_region_size": 11.28761556436046,
+   "purity": 0.999023489047242,
+   "seconds": 95.74340105056763,
+   "trace": [
+    "connected_components",
+    "merge_small(min_size=2)"
+   ],
+   "error": null
+  },
+  "botswana": {
+   "scene": "botswana",
+   "fitness": 99.55115805177714,
+   "oa_val": 99.82425307557118,
+   "oa_grp": 98.97750511247445,
+   "mf1_val": 0.9985171596728579,
+   "n_regions": 64013,
+   "mean_region_size": 5.902800993548185,
+   "purity": 1.0,
+   "seconds": 25.828479766845703,
+   "trace": [
+    "connected_components",
+    "merge_small(min_size=2)"
+   ],
+   "error": null
+  },
+  "houston": {
+   "scene": "houston",
+   "fitness": 93.16016764737556,
+   "oa_val": 98.5904761904762,
+   "oa_grp": 82.37465395262996,
+   "mf1_val": 0.9851537279902057,
+   "n_regions": 85915,
+   "mean_region_size": 7.7384042367456205,
+   "purity": 0.9940946756833984,
+   "seconds": 53.768646001815796,
+   "trace": [
+    "connected_components",
+    "merge_small(min_size=2)"
+   ],
+   "error": null
+  }
+ },
+ "eval_seconds": 136.74322319030762
+}

@@ -1,0 +1,8 @@
+data/
+cache/
+cache_*/
+paper_tables/
+paper_figures/
+__pycache__/
+*.pyc
+*.log

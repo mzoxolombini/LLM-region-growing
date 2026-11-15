@@ -1,0 +1,21 @@
+"""M1 on D0: regions of 3-6 pixels make the 88 GLCM features near-constant; the growth rule is
+kept and the description changed to PC first/second-order statistics and the mean spectrum."""
+import numpy as np
+from llm_mrg import blocks as B
+
+DESCRIPTION = ("Baseline MRG regions described by PC mean and standard deviation, mean V and mean "
+               "spectrum instead of GLCM texture.")
+PARAMS = {"t_intensity": 0.05, "t_orientation": 0.7853981633974483, "n_bins": 256, "grid": 3,
+          "connectivity": 8}
+CLASSIFIER = {"kernel": "linear", "C": 1.0, "gamma": "scale"}
+LABELING = "region"
+
+
+def segment(ctx, params):
+    return B.mrg(ctx, t_intensity=params["t_intensity"], t_orientation=params["t_orientation"],
+                 n_bins=params["n_bins"], grid=params["grid"], connectivity=params["connectivity"])
+
+
+def region_features(ctx, regions, rows, params):
+    return np.hstack([B.region_means(ctx.pcs, regions, rows), B.region_stds(ctx.pcs, regions, rows),
+                      B.region_means(ctx.v, regions, rows), B.region_means(ctx.bands, regions, rows)])

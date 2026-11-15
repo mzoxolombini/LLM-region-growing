@@ -1,0 +1,26 @@
+import numpy as np
+from scipy import ndimage
+from skimage.segmentation import felzenszwalb
+from llm_mrg import blocks as B
+
+DESCRIPTION = ("Felzenszwalb graph segmentation on the first three PCs defines regions, an RBF SVM "
+               "classifies pixels from their PCs plus Gaussian-smoothed PCs at two scales, and each "
+               "region takes the majority vote of its pixels.")
+
+PARAMS = {"n_pc_seg": 3, "scale": 20.0, "sigma": 0.5, "min_size": 8, "ctx_sigma1": 1.0, "ctx_sigma2": 2.5}
+CLASSIFIER = {"kernel": "rbf", "C": 100.0, "gamma": "scale"}
+LABELING = "pixel_vote"
+
+
+def segment(ctx, params):
+    f = np.asarray(ctx.pcs[..., : params["n_pc_seg"]], dtype=np.float64)
+    lab = felzenszwalb(f, scale=params["scale"], sigma=params["sigma"],
+                       min_size=params["min_size"], channel_axis=-1)
+    return B.relabel(lab)
+
+
+def pixel_features(ctx, params):
+    p = np.asarray(ctx.pcs, dtype=np.float32)
+    s1 = np.stack([ndimage.gaussian_filter(p[..., i], params["ctx_sigma1"]) for i in range(p.shape[2])], -1)
+    s2 = np.stack([ndimage.gaussian_filter(p[..., i], params["ctx_sigma2"]) for i in range(p.shape[2])], -1)
+    return np.concatenate([p, s1, s2], -1)

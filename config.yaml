@@ -1,0 +1,43 @@
+# LLM automated region-growing design (Chapter 8).
+# Values marked SET come from sections not in the chapter supplied (5.3, 6.3.3,
+# Table 6.2). Fill them in from the thesis before running for real.
+
+seed: 0                      # split seed used during the search (S_tr / S_te of Chapter 5)
+data_dir: data
+cache_dir: cache
+run_dir: runs/llm_mrg_main
+scenes: [indian_pines, pavia_university, salinas, botswana, houston]
+train_frac: 0.70             # Chapter 5 protocol: 70% train / 30% test
+inner_frac: 0.75             # S_tr -> 75% S_in / 25% S_val (Section 8.4.5)
+seed_design: designs/d0_baseline_mrg.py
+
+llm:
+  provider: anthropic        # anthropic | openai | mock
+  model: claude-opus-5-5     # SET: the model used in the thesis (Section 5.3)
+  temperature: 1.0           # SET
+  max_tokens: 12000
+  retries: 3
+  # base_url: http://localhost:8000/v1   # for provider: openai (vLLM, Ollama, ...)
+
+search:                      # SET: budget from Section 5.3
+  mu: 4
+  lambda: 4                  # 4 = one offspring per operator E1, E2, M1, M2
+  generations: 10
+
+harness:
+  timeout_s: 600             # per design per scene
+  parallel_scenes: 5         # scenes evaluated concurrently (one process each)
+  threads_per_job: 1
+  group_holdout_frac: 0.25
+  max_vote_pixels: 200       # pixel_vote: pixels sampled per region for the vote
+
+select:
+  strict_growth_rule: true   # LLM-MRG may not post-process MRG regions (merge / CC)
+
+final:
+  split_seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]   # SET: multi-split protocol, Section 5.5.4
+  spatial_tile: 16                              # SET: spatially disjoint check, Section 5.5.5
+  spatial_seeds: [0]
+  feature_selection: {n_particles: 10, iters: 20, alpha: 0.99, folds: 3}
+  doe: true                                     # run the DoE competitor (Section 5.2.3)
+  doe_budget: null                              # null = same number of evaluations as the search

@@ -1,0 +1,76 @@
+{
+ "id": "g02_01_E1_c75f414643",
+ "gen": 2,
+ "op": "E1",
+ "parents": [],
+ "description": "Felzenszwalb graph segmentation on the first three PCs defines regions, an RBF SVM classifies pixels from their PCs plus Gaussian-smoothed PCs at two scales, and each region takes the majority vote of its pixels.",
+ "fitness": 97.56006390203741,
+ "per_scene": {
+  "indian_pines": {
+   "scene": "indian_pines",
+   "fitness": 92.60750925050638,
+   "oa_val": 97.71460423634338,
+   "oa_grp": 83.6962590731435,
+   "mf1_val": 0.9641166444203231,
+   "n_regions": 871,
+   "mean_region_size": 24.138920780711825,
+   "purity": 0.9834123222748815,
+   "seconds": 5.0086729526519775,
+   "trace": [],
+   "error": null
+  },
+  "pavia_university": {
+   "scene": "pavia_university",
+   "fitness": 99.27110340010802,
+   "oa_val": 99.38551963665509,
+   "oa_grp": 99.22426928937526,
+   "mf1_val": 0.9920352127429367,
+   "n_regions": 7005,
+   "mean_region_size": 29.607423269093506,
+   "purity": 0.9991984771065023,
+   "seconds": 17.736167192459106,
+   "trace": [],
+   "error": null
+  },
+  "salinas": {
+   "scene": "salinas",
+   "fitness": 98.8282724204637,
+   "oa_val": 99.03937506597698,
+   "oa_grp": 98.14719505918681,
+   "mf1_val": 0.9929824713622735,
+   "n_regions": 4605,
+   "mean_region_size": 24.126818675352876,
+   "purity": 0.999155449986804,
+   "seconds": 33.37209439277649,
+   "trace": [],
+   "error": null
+  },
+  "botswana": {
+   "scene": "botswana",
+   "fitness": 98.53645689071887,
+   "oa_val": 99.12126537785588,
+   "oa_grp": 97.23076923076923,
+   "mf1_val": 0.9925733606353149,
+   "n_regions": 14860,
+   "mean_region_size": 25.42772543741588,
+   "purity": 1.0,
+   "seconds": 3.1219067573547363,
+   "trace": [],
+   "error": null
+  },
+  "houston": {
+   "scene": "houston",
+   "fitness": 98.55697754839012,
+   "oa_val": 99.04761904761905,
+   "oa_grp": 97.63268423062237,
+   "mf1_val": 0.9899062936692893,
+   "n_regions": 23836,
+   "mean_region_size": 27.892473569390837,
+   "purity": 0.9991427755024288,
+   "seconds": 10.33398151397705,
+   "trace": [],
+   "error": null
+  }
+ },
+ "eval_seconds": 38.41180419921875
+}

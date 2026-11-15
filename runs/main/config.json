@@ -1,0 +1,55 @@
+{
+ "seed": 0,
+ "data_dir": "/home/claude/data",
+ "cache_dir": "/home/claude/cache",
+ "run_dir": "runs/main",
+ "scenes": [
+  "indian_pines",
+  "pavia_university",
+  "salinas",
+  "botswana",
+  "houston"
+ ],
+ "train_frac": 0.7,
+ "inner_frac": 0.75,
+ "seed_design": "designs/d0_baseline_mrg.py",
+ "llm": {
+  "provider": "manual",
+  "model": "claude-opus-5-5",
+  "temperature": null
+ },
+ "search": {
+  "mu": 4,
+  "lambda": 4,
+  "generations": 2
+ },
+ "harness": {
+  "timeout_s": 900,
+  "parallel_scenes": 2,
+  "threads_per_job": 1,
+  "group_holdout_frac": 0.25,
+  "max_vote_pixels": 200
+ },
+ "select": {
+  "strict_growth_rule": true
+ },
+ "final": {
+  "split_seeds": [
+   0,
+   1,
+   2
+  ],
+  "spatial_tile": 16,
+  "spatial_seeds": [
+   0
+  ],
+  "feature_selection": {
+   "n_particles": 6,
+   "iters": 5,
+   "alpha": 0.99,
+   "folds": 3
+  },
+  "doe": true,
+  "doe_budget": 4
+ }
+}

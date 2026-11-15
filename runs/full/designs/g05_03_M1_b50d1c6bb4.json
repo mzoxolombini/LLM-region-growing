@@ -1,0 +1,78 @@
+{
+ "id": "g05_03_M1_b50d1c6bb4",
+ "gen": 5,
+ "op": "M1",
+ "parents": [
+  "g04_01_E1_0d99eb657a"
+ ],
+ "description": "Felzenszwalb segmentation on three PCs labelled by pixel vote of an RBF SVM whose pixel description adds object context: the mean PCs of the pixel's segment in a coarser Felzenszwalb partition, which follows field borders unlike Gaussian smoothing.",
+ "fitness": 98.80222634477765,
+ "per_scene": {
+  "indian_pines": {
+   "scene": "indian_pines",
+   "fitness": 96.78517507157312,
+   "oa_val": 99.05239687848383,
+   "oa_grp": 93.87755102040816,
+   "mf1_val": 0.9742557731582737,
+   "n_regions": 1618,
+   "mean_region_size": 12.994437577255871,
+   "purity": 0.9930303875104545,
+   "seconds": 14.286957502365112,
+   "trace": [],
+   "error": null
+  },
+  "pavia_university": {
+   "scene": "pavia_university",
+   "fitness": 99.25494380716064,
+   "oa_val": 99.5057440555704,
+   "oa_grp": 98.82780921584478,
+   "mf1_val": 0.9943127815006672,
+   "n_regions": 13528,
+   "mean_region_size": 15.331164991129508,
+   "purity": 0.9998664128510837,
+   "seconds": 56.54076647758484,
+   "trace": [],
+   "error": null
+  },
+  "salinas": {
+   "scene": "salinas",
+   "fitness": 99.2940046894412,
+   "oa_val": 99.76776100496147,
+   "oa_grp": 98.42494714587738,
+   "mf1_val": 0.9968930591748474,
+   "n_regions": 8523,
+   "mean_region_size": 13.035785521529977,
+   "purity": 0.9993929796780153,
+   "seconds": 90.27238893508911,
+   "trace": [],
+   "error": null
+  },
+  "botswana": {
+   "scene": "botswana",
+   "fitness": 99.57440048652238,
+   "oa_val": 99.47275922671353,
+   "oa_grp": 99.78165938864629,
+   "mf1_val": 0.9946878284420729,
+   "n_regions": 27725,
+   "mean_region_size": 13.628710550045085,
+   "purity": 1.0,
+   "seconds": 14.572920322418213,
+   "trace": [],
+   "error": null
+  },
+  "houston": {
+   "scene": "houston",
+   "fitness": 99.10260766919089,
+   "oa_val": 99.31428571428572,
+   "oa_grp": 98.89948642699926,
+   "mf1_val": 0.9909405086628768,
+   "n_regions": 43421,
+   "mean_region_size": 15.311600377697427,
+   "purity": 0.9996190113344128,
+   "seconds": 32.15188646316528,
+   "trace": [],
+   "error": null
+  }
+ },
+ "eval_seconds": 104.57199382781982
+}

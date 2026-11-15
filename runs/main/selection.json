@@ -1,0 +1,22 @@
+{
+ "LLM-RB": {
+  "id": "g02_01_E1_c75f414643",
+  "fitness": 97.56006390203741,
+  "path": "runs/main/designs/g02_01_E1_c75f414643.py",
+  "description": "Felzenszwalb graph segmentation on the first three PCs defines regions, an RBF SVM classifies pixels from their PCs plus Gaussian-smoothed PCs at two scales, and each region takes the majority vote of its pixels."
+ },
+ "LLM-MRG": {
+  "id": "g02_03_M1_1bfe6cf86d",
+  "fitness": 96.90753272233344,
+  "path": "runs/main/designs/g02_03_M1_1bfe6cf86d.py",
+  "description": "Baseline MRG growth rule unchanged; regions described by PC mean and std, mean V, mean spectrum and two-scale smoothed-PC context, labelled by an RBF SVM."
+ },
+ "Baseline MRG": {
+  "id": "g00_00_D0_5aff8873f1",
+  "fitness": 90.14917157307372,
+  "path": "runs/main/designs/g00_00_D0_5aff8873f1.py",
+  "description": "Modified region growing on the PCA V channel with histogram-frequency seeds, intensity and orientation constraints to the seed inside a 3x3 grid; regions described by 88 GLCM features and their mean spectrum."
+ },
+ "n_designs": 9,
+ "n_mrg_family": 5
+}

@@ -1,0 +1,86 @@
+{
+ "id": "g05_01_E1_381bdcdffa",
+ "gen": 5,
+ "op": "E1",
+ "parents": [],
+ "description": "Multichannel region growing on the first four PCs with a running-mean criterion and seeds ordered from the most homogeneous pixel outward; regions capped by a 3x3 grid; pixel vote of an RBF SVM on PCs, smoothed PCs and local PC standard deviation.",
+ "fitness": 91.01065190400175,
+ "per_scene": {
+  "indian_pines": {
+   "scene": "indian_pines",
+   "fitness": 94.8628311021029,
+   "oa_val": 96.32107023411372,
+   "oa_grp": 96.8079539508111,
+   "mf1_val": 0.9145946912138385,
+   "n_regions": 2909,
+   "mean_region_size": 7.227569611550361,
+   "purity": 0.9638974073041539,
+   "seconds": 19.829835414886475,
+   "trace": [
+    "grow(criterion=mean,channels=4,cells=9,thr=0.9)"
+   ],
+   "error": null
+  },
+  "pavia_university": {
+   "scene": "pavia_university",
+   "fitness": 99.52317933886934,
+   "oa_val": 99.65268501202245,
+   "oa_grp": 99.36305732484077,
+   "mf1_val": 0.9955379567974479,
+   "n_regions": 53765,
+   "mean_region_size": 3.857528131684181,
+   "purity": 0.999532444978793,
+   "seconds": 55.38374447822571,
+   "trace": [
+    "grow(criterion=mean,channels=4,cells=9,thr=0.9)"
+   ],
+   "error": null
+  },
+  "salinas": {
+   "scene": "salinas",
+   "fitness": 77.34391936262449,
+   "oa_val": 97.78317322917766,
+   "oa_grp": 42.584644730567476,
+   "mf1_val": 0.9166394012812832,
+   "n_regions": 2833,
+   "mean_region_size": 39.217790328273914,
+   "purity": 0.9795724465558194,
+   "seconds": 83.03208780288696,
+   "trace": [
+    "grow(criterion=mean,channels=4,cells=9,thr=0.9)"
+   ],
+   "error": null
+  },
+  "botswana": {
+   "scene": "botswana",
+   "fitness": 97.00531010178183,
+   "oa_val": 98.24253075571178,
+   "oa_grp": 94.25087108013938,
+   "mf1_val": 0.9852252846949432,
+   "n_regions": 61839,
+   "mean_region_size": 6.110318730897977,
+   "purity": 0.9960404751429829,
+   "seconds": 12.873100280761719,
+   "trace": [
+    "grow(criterion=mean,channels=4,cells=9,thr=0.9)"
+   ],
+   "error": null
+  },
+  "houston": {
+   "scene": "houston",
+   "fitness": 86.31801961463015,
+   "oa_val": 89.79047619047618,
+   "oa_grp": 79.24528301886792,
+   "mf1_val": 0.899182996345463,
+   "n_regions": 59291,
+   "mean_region_size": 11.213253276213928,
+   "purity": 0.9276121535384322,
+   "seconds": 37.02276110649109,
+   "trace": [
+    "grow(criterion=mean,channels=4,cells=9,thr=0.9)"
+   ],
+   "error": null
+  }
+ },
+ "eval_seconds": 105.34661173820496
+}

@@ -1,0 +1,35 @@
+import numpy as np
+from scipy import ndimage
+from skimage.segmentation import slic
+from llm_mrg import blocks as B
+
+DESCRIPTION = ("Two-scale SLIC: the intersection of 4-pixel and 16-pixel superpixel partitions on six "
+               "PCs; each region described by its PC mean, the PC mean of its 16-pixel parent "
+               "superpixel and multiscale smoothed-PC context, labelled as a region by an RBF SVM.")
+PARAMS = {"n_pc": 6, "fine": 4, "coarse": 16, "compactness": 0.1, "sigma": 0.5,
+          "ctx_sigma1": 1.0, "ctx_sigma2": 4.0}
+CLASSIFIER = {"kernel": "rbf", "C": 300.0, "gamma": "scale"}
+LABELING = "region"
+
+
+def _slic(ctx, params, pps):
+    f = np.asarray(ctx.pcs[..., : params["n_pc"]], dtype=np.float64)
+    n = max(16, int(ctx.H * ctx.W / pps))
+    return slic(f, n_segments=n, compactness=params["compactness"], sigma=params["sigma"],
+                channel_axis=-1, start_label=0, enforce_connectivity=True).astype(np.int64)
+
+
+def segment(ctx, params):
+    a, b = _slic(ctx, params, params["fine"]), _slic(ctx, params, params["coarse"])
+    return B.relabel(b * (int(a.max()) + 1) + a)
+
+
+def region_features(ctx, regions, rows, params):
+    p = np.asarray(ctx.pcs, dtype=np.float32)
+    k = p.shape[2]
+    coarse = B.relabel(_slic(ctx, params, params["coarse"]))
+    parent = B.region_means(p, coarse)[coarse]
+    s1 = np.stack([ndimage.gaussian_filter(p[..., i], params["ctx_sigma1"]) for i in range(k)], -1)
+    s2 = np.stack([ndimage.gaussian_filter(p[..., i], params["ctx_sigma2"]) for i in range(k)], -1)
+    m = lambda f: B.region_means(f, regions, rows)
+    return np.hstack([m(p), B.region_stds(p, regions, rows), m(parent), m(s1), m(s2)])

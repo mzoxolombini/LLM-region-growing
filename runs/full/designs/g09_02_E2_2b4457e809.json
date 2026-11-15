@@ -1,0 +1,94 @@
+{
+ "id": "g09_02_E2_2b4457e809",
+ "gen": 9,
+ "op": "E2",
+ "parents": [
+  "g06_02_E2_1112344206",
+  "g08_03_M1_fd4a4af9b7"
+ ],
+ "description": "Three-way intersection (singletons merged) of MRG regions, Felzenszwalb segments on three PCs and a 2-pixel-lattice PC-gradient watershed; pixel vote of an RBF SVM on PCs, two smoothing scales and local PC std.",
+ "fitness": 99.52174328046816,
+ "per_scene": {
+  "indian_pines": {
+   "scene": "indian_pines",
+   "fitness": 99.0342213171055,
+   "oa_val": 99.38684503901895,
+   "oa_grp": 98.81889763779527,
+   "mf1_val": 0.9889692127450227,
+   "n_regions": 5968,
+   "mean_region_size": 3.522955764075067,
+   "purity": 0.9988848620016727,
+   "seconds": 13.035651683807373,
+   "trace": [
+    "mrg(seed_order=histogram,criterion=seed,orientation=on,grid=3,t_int=0.05,t_ori=0.7854,bins=256)",
+    "merge_small(min_size=2)"
+   ],
+   "error": null
+  },
+  "pavia_university": {
+   "scene": "pavia_university",
+   "fitness": 99.64160188535726,
+   "oa_val": 99.59925193694897,
+   "oa_grp": 99.81422505307856,
+   "mf1_val": 0.9951132866604426,
+   "n_regions": 54288,
+   "mean_region_size": 3.820365458296493,
+   "purity": 0.999966603212771,
+   "seconds": 42.12363147735596,
+   "trace": [
+    "mrg(seed_order=histogram,criterion=seed,orientation=on,grid=3,t_int=0.05,t_ori=0.7854,bins=256)",
+    "merge_small(min_size=2)"
+   ],
+   "error": null
+  },
+  "salinas": {
+   "scene": "salinas",
+   "fitness": 99.75240737734623,
+   "oa_val": 99.83109891269925,
+   "oa_grp": 99.65455877734743,
+   "mf1_val": 0.9977156444199204,
+   "n_regions": 34195,
+   "mean_region_size": 3.2491299897645853,
+   "purity": 0.9998416468725257,
+   "seconds": 71.37003946304321,
+   "trace": [
+    "mrg(seed_order=histogram,criterion=seed,orientation=on,grid=3,t_int=0.05,t_ori=0.7854,bins=256)",
+    "merge_small(min_size=2)"
+   ],
+   "error": null
+  },
+  "botswana": {
+   "scene": "botswana",
+   "fitness": 99.5490153814631,
+   "oa_val": 99.64850615114236,
+   "oa_grp": 99.64912280701755,
+   "mf1_val": 0.9934941718622934,
+   "n_regions": 110191,
+   "mean_region_size": 3.4291003802488405,
+   "purity": 1.0,
+   "seconds": 23.135971784591675,
+   "trace": [
+    "mrg(seed_order=histogram,criterion=seed,orientation=on,grid=3,t_int=0.05,t_ori=0.7854,bins=256)",
+    "merge_small(min_size=2)"
+   ],
+   "error": null
+  },
+  "houston": {
+   "scene": "houston",
+   "fitness": 99.63147044106869,
+   "oa_val": 99.88571428571429,
+   "oa_grp": 99.18981481481481,
+   "mf1_val": 0.9981888222267697,
+   "n_regions": 185596,
+   "mean_region_size": 3.5822162115562834,
+   "purity": 0.9999047528336032,
+   "seconds": 29.524959564208984,
+   "trace": [
+    "mrg(seed_order=histogram,criterion=seed,orientation=on,grid=3,t_int=0.05,t_ori=0.7854,bins=256)",
+    "merge_small(min_size=2)"
+   ],
+   "error": null
+  }
+ },
+ "eval_seconds": 94.85094833374023
+}

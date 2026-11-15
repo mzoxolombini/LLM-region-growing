@@ -1,0 +1,27 @@
+import numpy as np
+from skimage.segmentation import slic
+from llm_mrg import blocks as B
+
+DESCRIPTION = ("SLIC superpixels on the first five standardised PCs replace region growing; each "
+               "superpixel is described by the mean and standard deviation of the ten PCs and its "
+               "mean spectrum, and an RBF SVM labels the superpixels.")
+
+PARAMS = {"n_pc": 5, "pixels_per_segment": 30, "compactness": 0.1, "sigma": 0.5, "max_iter": 10}
+CLASSIFIER = {"kernel": "rbf", "C": 100.0, "gamma": "scale"}
+LABELING = "region"
+
+
+def segment(ctx, params):
+    f = np.asarray(ctx.pcs[..., : params["n_pc"]], dtype=np.float64)
+    n_seg = max(16, int(ctx.H * ctx.W / params["pixels_per_segment"]))
+    lab = slic(f, n_segments=n_seg, compactness=params["compactness"], sigma=params["sigma"],
+               max_num_iter=params["max_iter"], channel_axis=-1, start_label=0,
+               enforce_connectivity=True)
+    return B.relabel(lab)
+
+
+def region_features(ctx, regions, rows, params):
+    m = B.region_means(ctx.pcs, regions, rows)
+    s = B.region_stds(ctx.pcs, regions, rows)
+    spec = B.region_means(ctx.bands, regions, rows)
+    return np.hstack([m, s, spec])
